@@ -2,7 +2,18 @@ package main
 
 import "fmt"
 
-// import "fmt"
+// type Address struct {
+// 	Street string
+// 	City   string
+// }
+// type Person struct {
+// 	Name    string
+// 	Address Address30
+// }
+// type Project struct {
+// 	Name    string
+// 	Meneger Person30
+// }
 
 // /*
 // 	1.	Проверка температуры
@@ -385,8 +396,40 @@ func address24(s Person24) Person24 {
 Создайте структуру Company с полями Name и Location (структура Address).
 Напишите функцию, которая принимает Company и выводит информацию о компании.
 */
-type Company struct {
+type Company27 struct {
 	Name     string
 	Location Address24
 }
-// func category
+
+func company27(x Company27) string {
+	return fmt.Sprintf("Компания: %s,\nАдресс: %s,\nГород: %s,\n", x.Name, x.Location.Street, x.Location.City)
+}
+
+/*
+30. Управление проектом.
+Создайте структуру Project с полями Name и Manager (структура Person,
+где Person имеет поле Name и Address (структура Address)). Напишите функцию,
+которая принимает Project и выводит информацию о проекте и менеджере.
+*/
+
+// type Address30 struct {
+// 	Street string
+// 	City   string
+// }
+// type Person30 struct {
+// 	Name    string
+// 	Address Address30
+// }
+// type Project30 struct {
+// 	Name    string
+// 	Meneger Person30
+// }
+
+// func project30(x Project30) {
+// 	fmt.Printf("Назввания проекта: %s\n", x.Name)
+// 	fmt.Printf("Имя менеджера: %s\n ", x.Meneger.Name)
+// 	fmt.Printf("Адрес менеджера: \n")
+// 	fmt.Printf(" Улаца: %s\n", x.Meneger.Address.Street)
+// 	fmt.Printf(" Город: %s\n", x.Meneger.Address.City)
+
+// }

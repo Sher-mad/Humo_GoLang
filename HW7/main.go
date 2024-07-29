@@ -144,4 +144,27 @@ func main() {
 	// 26. Адрес человека.
 	address24x := Person24{Name: "Sherzod", Address: Address24{Street: "Tajikistan", City: "Dushanbe"}}
 	fmt.Println(address24(address24x))
+
+	// 27. Описание компании
+	fmt.Println("27. Описание компании")
+	company27x := Company27{
+		Name:     "SherTechnoli",
+		Location: Address24{Street: "Айни 155", City: "Dushanbe"},
+	}
+	result27 := company27(company27x)
+	fmt.Println(result27)
+
+	// //30. Управление проектом.
+	// fmt.Println("30. Управление проектом.")
+	// project30x := Project30{
+	// 	Name: "Delevely",
+	// 	Meneger: Person30{
+	// 		Name: "Sherzod",
+	// 		Address: Address30{
+	// 			Street: "Айни 155",
+	// 			City:   "Dushabe",
+	// 		},
+	// 	},
+	// }
+	// result30 := project30(project30x)
 }
