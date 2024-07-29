@@ -16,3 +16,19 @@ func findMAxArr(arr []int) int {
 	}
 	return max
 }
+
+/*
+2. Найти минимальный элемент в массиве.
+*/
+func findMinArr(arr []int) int {
+	if len(arr) == 0 {
+		return 0
+	}
+	max := arr[0]
+	for _, num := range arr {
+		if num < max {
+			max = num
+		}
+	}
+	return max
+}
