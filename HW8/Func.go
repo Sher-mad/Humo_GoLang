@@ -110,9 +110,31 @@ func deleteElementArr(arr []int, delete int) ([]int, []int) {
 
 func multiplyArray(num []int, multiply int) []int {
 	zero := []int{0}
+	// multiplys := []int{}
 	if len(num) == 0 {
 		return zero
 	}
+	for i, v := range num {
+		// multiply = append(multiplys, v*multiply)
+		num[i] = v * multiply
+	}
 	return num
+}
+
+// 8. Найти все индексы заданного числа в массиве.
+func fintInidics(arr []int, s int) []int {
 	
+	zero := []int{0}
+	if len(arr) == 0 {
+		return zero
+	}
+
+	result := []int{}
+	for i, v := range arr {
+		if v == s {
+			result = append(result, i)
+
+		}
+	}
+	return result
 }

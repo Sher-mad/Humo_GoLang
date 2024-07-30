@@ -49,4 +49,21 @@ func main() {
 	fmt.Println("Из масифа удалени элементи ", dele, "\n After", resultArr6)
 	fmt.Println("Из масифа удалени элементи ", dele, "\n After", resultArr7)
 
+	// 7. Умножить все элементы массива на заданное число.
+	fmt.Println("7. Умножить все элементы массива на заданное число.")
+	numbersArr7 := []int{1, 2, 3, 4, 5, 6, 7, 8}
+	fmt.Println("Before Array to multiply = ", numbersArr7)
+	multiply := 5 //Переменая для умножения
+	fmt.Println("Multiply to = ", multiply)
+	resultArrmultiply7 := multiplyArray(numbersArr7, multiply)
+	fmt.Println("After to multiply = ", resultArrmultiply7)
+
+	//8. Найти все индексы заданного числа в массиве.
+	fmt.Println("8. Найти все индексы заданного числа в массиве.")
+	numbersArr8 := []int{1, 2, 3, 2, 4, 5, 2}
+	fmt.Println("Array 8 = ", numbersArr8)
+	indeces := 2
+	fmt.Println("Интекс = ", indeces)
+	resultArrIndeces8 := fintInidics(numbersArr8, indeces)
+	fmt.Println(" = ",resultArrIndeces8)
 }
