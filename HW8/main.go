@@ -112,15 +112,15 @@ func main() {
 	resultArr14 := PervernutArr(arr14)
 	fmt.Println("After result = ", resultArr14)
 
-	// // 15. Удалить дубликаты из массива.
-	// fmt.Println("15. Удалить дубликаты из массива.")
-	// arr15 := []int{1, 2, 3, 2, 5, 6, 2}
+	// 15. Удалить дубликаты из массива.
+	fmt.Println("15. Удалить дубликаты из массива.")
+	arr15 := []int{1, 2, 3, 2, 5, 6, 2}
+	fmt.Println("Array 15 = ", arr15)
 	// dubl := 2
-	// resultDublArr15 := deleteElementArrDuble(arr15, dubl)
-	// fmt.Println(resultDublArr15)
-	// Не решено
+	resultDublArr15 := deleteElementArrDuble(arr15)
+	fmt.Println(resultDublArr15)
 
-	// 16.	Переместить все нули в конце массива, сохраняя порядок ненулевых элементов.
-	fmt.Println("16. Переместить все нули в конце массива, сохраняя порядок ненулевых элементов.")
-	
+	// // 16.	Переместить все нули в конце массива, сохраняя порядок ненулевых элементов.
+	// fmt.Println("16. Переместить все нули в конце массива, сохраняя порядок ненулевых элементов.")
+
 }

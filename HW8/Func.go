@@ -208,25 +208,28 @@ func PervernutArr(arr []int) []int {
 	return num
 }
 
-// // 15.	Удалить дубликаты из массива.
-// func deleteElementArrDuble(arr []int, dubl int) []int {
-// 	result := []int{}
-// 	for i, v := range arr {
-// 		// found = false
-// 		if v == dubl {
-// 			result[i] = arr[i]
-// 		}
+// 15.	Удалить дубликаты из массива.
+func deleteElementArrDuble(arr []int) []int {
+	result := []int{}
+	for i, v := range arr {
+		found := false
+		for j := 0; j < i; j++ {
+			if arr[j] == v {
+				found = true
+				break
+			}
+		}
+		if !found {
+			result = append(result, v)
+		}
 
-// 	}
-// 	return result
+	}
+	return result
 
-// }
-// 15 ДЗ не решено до конца
-
+}
 
 // 16.	Переместить все нули в конце массива, сохраняя порядок ненулевых элементов.
-func ZeroFins(arr []int)
-
+// func ZeroFins(arr []int)
 
 // 17.	Найти пересечение двух массивов.
 // 18.	Проверить, является ли массив подмножеством другого массива.
