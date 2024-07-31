@@ -58,12 +58,69 @@ func main() {
 	resultArrmultiply7 := multiplyArray(numbersArr7, multiply)
 	fmt.Println("After to multiply = ", resultArrmultiply7)
 
-	//8. Найти все индексы заданного числа в массиве.
+	// 8. Найти все индексы заданного числа в массиве.
 	fmt.Println("8. Найти все индексы заданного числа в массиве.")
 	numbersArr8 := []int{1, 2, 3, 2, 4, 5, 2}
 	fmt.Println("Array 8 = ", numbersArr8)
 	indeces := 2
 	fmt.Println("Интекс = ", indeces)
 	resultArrIndeces8 := fintInidics(numbersArr8, indeces)
-	fmt.Println(" = ",resultArrIndeces8)
+	fmt.Println(" = ", resultArrIndeces8)
+
+	// 9. Создать копию массива.
+	fmt.Println("9. Создать копию массива.")
+	arr9 := []int{1, 2, 3, 4, 5, 6, 7}
+	fmt.Println("Array_9 = ", arr9)
+	copyArr := copyArray9(arr9)
+	fmt.Println("Befor Copy = ", copyArr)
+	copyArr[0] = 10
+	copyArr[5] = 12
+	fmt.Println("After Copy = ", copyArr)
+
+	// 10. Объединить два массива.
+	arr10 := []int{1, 2, 3, 4}
+	arr10_2 := []int{5, 6, 7, 8}
+	fmt.Println("Array 10 = ", arr10)
+	fmt.Println("Array 10_2 = ", arr10_2)
+	resultArr10 := append(arr10, arr10_2...)
+	fmt.Println("After Обьединения = ", resultArr10)
+
+	// 11. Поменять местами максимальный и минимальный элементы массива.
+	arr := []int{3, 1, 4, 1, 5, 9, 2, 6, 5, 3}
+	fmt.Println("11 = ", arr)
+	swapMinMax(arr)
+	fmt.Println(arr)
+
+	// 12.	Проверить, является ли массив палиндромом.
+	fmt.Println("12.	Проверить, является ли массив палиндромом.")
+	nums12_11 := []int{1, 2, 3, 4, 6}
+	nums12_12 := []int{1, 3, 4, 3, 1}
+	fmt.Println("Должен быть false = ", Palindrom(nums12_11))
+	fmt.Println("Должен быть true = ", Palindrom(nums12_12))
+
+	// 13. Найти второе наибольшее число в массиве.
+	fmt.Println("13. Найти второе наибольшее число в массиве.")
+	arr13 := []int{1, 2, 3, 4, 5, 6}
+	fmt.Println("Array 13 = ", arr13)
+	resultArr13 := findSecondMaxArr(arr13)
+	fmt.Println("Second Max Array = ", resultArr13)
+
+	// 14. Перевернуть массив.
+	fmt.Println("14. Перевернуть массив.")
+	arr14 := []int{1, 2, 3, 4, 5, 6}
+	fmt.Println("Before Array 14 = ", arr14)
+	resultArr14 := PervernutArr(arr14)
+	fmt.Println("After result = ", resultArr14)
+
+	// // 15. Удалить дубликаты из массива.
+	// fmt.Println("15. Удалить дубликаты из массива.")
+	// arr15 := []int{1, 2, 3, 2, 5, 6, 2}
+	// dubl := 2
+	// resultDublArr15 := deleteElementArrDuble(arr15, dubl)
+	// fmt.Println(resultDublArr15)
+	// Не решено
+
+	// 16.	Переместить все нули в конце массива, сохраняя порядок ненулевых элементов.
+	fmt.Println("16. Переместить все нули в конце массива, сохраняя порядок ненулевых элементов.")
+	
 }
